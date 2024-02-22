@@ -11,4 +11,14 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  height: 100vh;
+  display: flex;
+  margin: 20px 0;
+  align-items: center;
+  justify-content: center;
+  overflow: scroll;
 }
+
+$bg: black;
+$bd: #2f3645;

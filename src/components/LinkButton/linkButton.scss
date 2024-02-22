@@ -1,0 +1,50 @@
+$link-text-bg-hover:#0f172a;
+$link-text-bg-active: #000c45;
+
+$link-text-color: #c2d6f2;
+$link-text-color-hover: #eaf5ff;
+$link-text-color-active: #f4fdff;
+
+.link-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 12px 0;
+
+  cursor: pointer;
+
+  color: $link-text-color;
+  background-color: transparent;
+  border-radius: 14px;
+  padding: 10px;
+}
+
+.link-button:hover {
+  color: $link-text-color-hover;
+  background-color: $link-text-bg-hover;
+}
+
+.link-button.active {
+  color: $link-text-color-active;
+  background-color: $link-text-bg-active;
+}
+
+.link-button__icon {
+  height: 16px;
+  width: 16px;
+  padding: 2px;
+}
+
+.link-button__title {
+  font-size: 12px;
+  padding-left: 14px;
+  opacity: 1;
+  visibility: visible;
+  transition: visibility 200ms, opacity 200ms;
+}
+
+.link-button__title.shrink {
+  opacity: 0;
+  visibility: hidden;
+}
